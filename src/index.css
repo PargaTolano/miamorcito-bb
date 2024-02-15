@@ -3,3 +3,29 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@keyframes dialog-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+
+.dialog-text {
+    animation: dialog-animation;
+}

@@ -1,0 +1,117 @@
+{
+    "dialogos": [
+        {
+            "waitBefore": 20000,
+            "content": "Hola miamor 😉",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Soy yo, tu paparriqui guapo",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Y vengo a decirte gracias",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por todas las veces que me haces sentir querido y amado",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por todas los besos y caricias que me hacen sentir tan vulnerable a tu toque",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por todas las risas que me has regalado",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por toda la atención y detalles que me has dado",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por detenerte a escucharme cuando más lo necesito",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por ser la persona en que me puedo apoyar para todo",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Gracias por ser tu misma",
+            "duration": 4000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Eres el ser más precioso y maravilloso que ha llegado a mi vida y no puedo creer que estes en ella, no conmigo",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Hace más de 6 años que por primera vez me fije en ti, y desde el principio te vi y dije \"Lo que daria por estar con ella\"",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "\"Es una persona divertida, carismatica, amable, hermosa. Siempre me siento bien cuando estoy a su lado\"",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Y años despues me doy cuenta de algo, eres mucho más de lo que alguna vez pude pensar y querer en alguien, eres mucho más de lo que alguna vez soñe",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Eres mi companera de aventuras, mi amiga, con quien puedo solo perder tiempo o contar chisme",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Pero tambien eres la persona a la que puedo abrazar y besar, la persona por la que se daría mucho más de lo que alguna vez he dado",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Eres mi corazon, eres mi sol, eres el cielo y las estrellas, eres el mar y la playa, eres todo",
+            "duration": 5000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Talvez, más que todo",
+            "duration": 1500,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Feliz San Valentín, mi vida preciosa, amor de mi vida, madre de mis gatos, dueña de mis quincenas",
+            "duration": 3000,
+            "waitAfter": 1000
+        },
+        {
+            "content": "Te amo cada día más ❤️",
+            "duration": 3000,
+            "waitAfter": 1000,
+            "nowrap": true
+        },
+        {
+            "content": "Y te amaré hasta mi último aliento ❤️",
+            "duration": 3000,
+            "waitAfter": 1000,
+            "nowrap": true
+        },
+        {
+            "content": "- Parga",
+            "duration": 4000,
+            "waitAfter": 200
+        }
+    ]
+}

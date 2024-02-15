@@ -1,0 +1,73 @@
+{
+    "cats": [
+        {
+            "type": "trumpet",
+            "scaleFactor": 0.3,
+            "position": {
+                "left": "2vw",
+                "bottom": "2vh"
+            },
+            "transitionDuration": "300ms",
+            "transitionDelay": "3000ms",
+            "transform": "scaleX(-2) scaleY(2)",
+            "zIndex": 2
+        },
+        {
+            "type": "trumpet",
+            "scaleFactor": -0.1,
+            "position": {
+                "left": "12vw",
+                "bottom": "10vh"
+            },
+            "transitionDuration": "300ms",
+            "transitionDelay": "3000ms",
+            "transform": "scaleX(-2.2) scaleY(2.2)",
+            "zIndex": 1
+        },
+        {
+            "type": "trumpet",
+            "scaleFactor": 0.35,
+            "position": {
+                "right": "2vw",
+                "bottom": "2vh"
+            },
+            "transitionDuration": "300ms",
+            "transitionDelay": "3000ms",
+            "transform": "scaleX(2) scaleY(2)",
+            "zIndex": 2
+        },
+        {
+            "type": "trumpet",
+            "scaleFactor": -0.2,
+            "position": {
+                "right": "12vw",
+                "bottom": "10vh"
+            },
+            "transitionDuration": "300ms",
+            "transitionDelay": "3000ms",
+            "transform": "scaleX(2.2) scaleY(2.2)",
+            "zIndex": 1
+        },
+        {
+            "type": "tuba",
+            "position": {
+                "right": "16vw",
+                "bottom": "20vh"
+            },
+            "transitionDuration": "1000ms",
+            "transitionDelay": "500ms",
+            "zIndex": 0
+        },
+        {
+            "type": "drums",
+            "scaleFactor": 0.2,
+            "position": {
+                "left": "18vw",
+                "bottom": "20vh"
+            },
+            "transitionDuration": "1200ms",
+            "transitionDelay": "3500ms",
+            "zIndex": 0
+        }
+    ]
+}
