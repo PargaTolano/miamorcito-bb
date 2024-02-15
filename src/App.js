@@ -9,6 +9,8 @@ import trumpet from "./img/trumpet-cat.png";
 import tuba from "./img/tuba-cat.png";
 import drums from "./img/drums-cat.png";
 
+import vikingos from "./img/vikingos.png";
+
 import dialogosJson from "./data/dialogos.json";
 import catJson from "./data/bandCats.json";
 
@@ -21,9 +23,6 @@ const catMap = {
   tuba,
   drums,
 };
-
-// audio file
-async function getAudioFile() {}
 
 function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -70,7 +69,8 @@ function Cat({
   );
 }
 
-function Dialogo({ open, setFinalOpen }) {
+const period = 1;
+function Dialogo({ open, finalOpen, setFinalOpen }) {
   const [idx, setIdx] = useState(0);
 
   const dialogo = useMemo(() => dialogos[idx], [idx]);
@@ -78,20 +78,17 @@ function Dialogo({ open, setFinalOpen }) {
   useEffect(() => {
     (async () => {
       if (!open) {
-        // start dialog sequence
-        if (dialogo.waitBefore) {
-          // chain from here
-          await wait(dialogo.waitBefore/5);
-        }
-        await wait(dialogo.duration/5);
-        if (dialogo.waitAfter) {
-          await wait(dialogo.waitAfter/5);
-        }
-        if (idx !== dialogos.length - 1)
-          setIdx((prev) => prev + 1);
-      } else if (idx === dialogos.length -1) {
-        // mostrar final
 
+        if (dialogo.waitBefore) 
+          await wait(dialogo.waitBefore / period);
+        await wait(dialogo.duration / period);
+        if (dialogo.waitAfter) 
+          await wait(dialogo.waitAfter / period);
+
+        if (idx !== dialogos.length - 1)
+          setIdx((prev) => prev + 1); 
+        else
+          setTimeout( () => setFinalOpen(true), 1000);
       }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -105,12 +102,12 @@ function Dialogo({ open, setFinalOpen }) {
           className="dialog-text absolute left-1/2 top-1/4 text-white z-20 w-96 text-4xl font-bold"
           style={{
             animationFillMode: "both",
-            animationDelay: `${dialogo.waitBefore/5}ms`,
-            animationDuration: `${dialogo.duration/5}ms`,
-            ...(dialogo.nowrap ? { whiteSpace: 'nowrap'}: {}),
+            animationDelay: `${dialogo.waitBefore / period}ms`,
+            animationDuration: `${dialogo.duration / period}ms`,
+            ...(dialogo.nowrap ? { whiteSpace: "nowrap" } : {}),
           }}
         >
-          {dialogo.content}
+          {dialogo.content} {finalOpen.toString()}
         </p>
       )}
     </>
@@ -119,6 +116,7 @@ function Dialogo({ open, setFinalOpen }) {
 
 function App() {
   const [open, setOpen] = useState(true);
+  const [finalOpen, setFinalOpen] = useState(false);
 
   const audio = useMemo(() => new Audio(miMayorAnhelo), []);
 
@@ -177,18 +175,33 @@ function App() {
           className={`fixed w-full h-full bg-black/60 flex justify-center items-center ${
             open ? "opacity-0" : "opacity-100"
           } z-10 transition-opacity duration-1000 delay-19000`}
-        ></div>
+        />
 
-        {/* TODO: Agregar texto */}
-        <Dialogo open={open} />
+        <Dialogo open={open} finalOpen={finalOpen} setFinalOpen={setFinalOpen} />
 
-        {/* TODO: Hacer crecer y encongerse a los gatos en base a los valores del audio en spikes */}
         {
           // aggregar gatos de banda uno a uno
           cats.map((cat, idx) => (
             <Cat key={idx} cat={cat} open={open} scale={factors[idx] / 255} />
           ))
         }
+
+        <div
+          className={`fixed w-full h-full bg-black/60 flex justify-center items-center z-40 ${
+            finalOpen ? "" : "invisible"
+          }`}
+        >
+          <div
+            className={`${
+              finalOpen ? "opacity-100" : "opacity-0"
+            } ${
+              finalOpen ? "-translate-y-10" : "-translate-y-0"
+            } duration-700 delay-700 transition-all`}
+          >
+            <h1 className="text-white size text-center text-6xl mb-6">❤️ Feliz San Valentin ❤️</h1>
+            <img className="mx-auto" src={vikingos} alt="vikingos" />
+          </div>
+        </div>
       </div>
     </>
   );
