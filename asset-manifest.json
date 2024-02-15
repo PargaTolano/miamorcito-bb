@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/miamorcito-bb/static/css/main.96a0a89a.css",
-    "main.js": "/miamorcito-bb/static/js/main.0e475781.js",
+    "main.js": "/miamorcito-bb/static/js/main.1bb1fcb4.js",
     "static/js/592.4ef9cf07.chunk.js": "/miamorcito-bb/static/js/592.4ef9cf07.chunk.js",
     "static/media/banda_ms__mi_mayor_anhelo.mp3": "/miamorcito-bb/static/media/banda_ms__mi_mayor_anhelo.8498910b5dc2776ff69a.mp3",
     "static/media/moon-1859616.jpg": "/miamorcito-bb/static/media/moon-1859616.6d97cb0072d7e7a31336.jpg",
@@ -12,11 +12,11 @@
     "static/media/trumpet-cat.png": "/miamorcito-bb/static/media/trumpet-cat.ce7fe8501df3b290dfb2.png",
     "index.html": "/miamorcito-bb/index.html",
     "main.96a0a89a.css.map": "/miamorcito-bb/static/css/main.96a0a89a.css.map",
-    "main.0e475781.js.map": "/miamorcito-bb/static/js/main.0e475781.js.map",
+    "main.1bb1fcb4.js.map": "/miamorcito-bb/static/js/main.1bb1fcb4.js.map",
     "592.4ef9cf07.chunk.js.map": "/miamorcito-bb/static/js/592.4ef9cf07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96a0a89a.css",
-    "static/js/main.0e475781.js"
+    "static/js/main.1bb1fcb4.js"
   ]
 }
